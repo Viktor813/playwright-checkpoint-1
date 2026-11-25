@@ -2,7 +2,9 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "test": "playwright test"
+    "test": "playwright test",
+    "test:tasks": "playwright test tests/01-catalog.spec.js --grep \"Задание [123]$\"",
+    "test:list": "playwright test --list"
   },
   "devDependencies": {
     "@playwright/test": "1.58.2"
